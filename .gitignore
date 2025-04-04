@@ -2,3 +2,5 @@ generate-keypair/node_modules/
 generate-keypair/.env
 read-solana-network/node_modules/
 read-solana-network/.env
+create-transactions/node_modules/
+create-transactions/.env
