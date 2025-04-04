@@ -1,0 +1,22 @@
+{
+	"name": "read-solana-network",
+	"version": "1.0.0",
+	"description": "Reading accounts data from solana cluster-Devnet/testnet/mainnet",
+	"main": "read-solana.ts",
+	"scripts": {
+		"dev": "ts-node ./read-solana.ts"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Enockkipkoech/solana-tuts.git"
+	},
+	"keywords": [
+		"Solana"
+	],
+	"author": "Enock kipkoech",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Enockkipkoech/solana-tuts/issues"
+	},
+	"homepage": "https://github.com/Enockkipkoech/solana-tuts#readme"
+}
