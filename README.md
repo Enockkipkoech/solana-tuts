@@ -2,4 +2,4 @@
 
 0. Project configs, set-ups and installlations
 1. Key-pair generation
-2.
+2. Read Data from solana network and programs
