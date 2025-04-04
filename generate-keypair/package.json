@@ -1,0 +1,29 @@
+{
+	"name": "generate-keypair",
+	"version": "1.0.0",
+	"description": "Solana wallet generation",
+	"main": "generate-keypair.ts",
+	"scripts": {
+		"dev": "ts-node ./generate_keypair.ts"
+	},
+	"repository": {
+		"type": "git",
+		"url": "Solana-tuts"
+	},
+	"keywords": [
+		"solana",
+		"asymmetric",
+		"cryptocraphy",
+		"crypto",
+		"wallets"
+	],
+	"author": "Enock Kipkoech",
+	"license": "ISC",
+	"dependencies": {
+		"@solana-developers/helpers": "^2.8.1",
+		"@solana/web3.js": "^1.98.0",
+		"dotenv": "^16.4.7",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.8.2"
+	}
+}
