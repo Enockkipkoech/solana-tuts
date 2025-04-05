@@ -3,7 +3,8 @@
 	"version": "1.0.0",
 	"main": "index.js",
 	"scripts": {
-		"dev": "ts-node --transpile-only ./create-transaction.ts"
+		"dev": "ts-node --transpile-only ./create-transaction.ts",
+		"pingtx": "ts-node --transpile-only ./send-ping-tx.ts"
 	},
 	"repository": {
 		"type": "git",
