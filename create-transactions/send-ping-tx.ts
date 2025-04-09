@@ -72,6 +72,11 @@ const sendPingTx = async () => {
 	console.log(
 		`\n 🤓 Ping transaction sent! Signature: ${signature}\nTransaction on SOLSCAN: https://explorer.solana.com/tx/${signature}?cluster=devnet`
 	);
+
+	// TODO CHALLENGE
+	// Send transactions safely from the browser instead of running a script
+	// Add custom data to your instructions
+	// Deserialize data from the chain
 };
 
 sendPingTx()

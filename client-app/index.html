@@ -1,0 +1,79 @@
+<html>
+	<head>
+		FRONTEND NERD!
+	</head>
+
+	<body>
+		<div id="app"></div>
+
+		<script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+		<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+		<!-- Babel Script -->
+		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+		<script type="text/babel">
+			// get div element by id
+			const app = document.getElementById('app');
+
+			// Create a React component
+			function Header(props) {
+				console.log('Header component called', { props });
+
+				// Destructuring props
+				const { title } = props;
+				return (
+					<>
+						<h1>{title ? title : 'React Tutorials'}</h1>
+						<h2>Ideate.Develop. Test. Deploy.</h2>
+					</>
+				);
+			}
+			// Nesting components
+			function HomePage() {
+				const favNames = ['Enock', 'NodeG', 'Boiyo', 'Node5000'];
+				console.log('Names', { favNames });
+
+				//Hooks
+				const [likes, setLikes] = React.useState(0);
+
+				function handleClick() {
+					setLikes(likes + 1);
+					console.log('Button clicked. Increment Likes');
+				}
+				return (
+					<div>
+						<Header title="Node:5000 Developer" />
+						<h2>Welcome to React</h2>
+
+						<ul>
+							{favNames.map((name, index) => (
+								<li key={index}>{name}</li>
+							))}
+						</ul>
+						<button onClick={handleClick}>Like Me({likes})</button>
+
+						<p>Nice Work! 👏 👏 </p>
+					</div>
+				);
+			}
+
+			const root = ReactDOM.createRoot(app);
+			root.render(<HomePage />);
+		</script>
+	</body>
+</html>
+<!-- 
+// Create H1 element
+			const header = document.createElement('h1');
+			// Set the text content of the H1 element
+			const text = 'Ideate. Develop. Test. Deploy.';
+			const headerContent = document.createTextNode(text);
+
+			// Append text to H1
+			header.appendChild(headerContent);
+
+			// Append the H1 to app div
+			app.appendChild(header);
+            
+-->
