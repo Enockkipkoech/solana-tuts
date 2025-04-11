@@ -4,3 +4,7 @@ read-solana-network/node_modules/
 read-solana-network/.env
 create-transactions/node_modules/
 create-transactions/.env
+
+client-app/.next/
+client-app/node_modules/
+client-app/.env
